@@ -99,10 +99,9 @@
                         Style="{x:StaticResource GoogleFont}" 
                         Margin="10, 10"/>
 
-                    <Entry x:Name="UsernameEntry" 
+                    <Entry x:Name="IdentityEntry" 
                        Placeholder="Username"
                        FontSize="16"
-                       TextColor="White"
                        BackgroundColor="Transparent"
                        Grid.Column="1" />
                 </Grid>
@@ -123,7 +122,6 @@
                        Placeholder="Password" 
                        FontSize="16"
                        IsPassword="True"
-                       TextColor="White"
                        BackgroundColor="Transparent"
                        Grid.Column="1" />
                 </Grid>

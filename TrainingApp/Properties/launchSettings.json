@@ -3,6 +3,13 @@
     "Windows Machine": {
       "commandName": "MsixPackage",
       "nativeDebugging": false
+    },
+    "Profile 1": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "SERVER_URL": "https://perqvkdlykymdttetgqf.supabase.co",
+        "SERVER_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBlcnF2a2RseWt5bWR0dGV0Z3FmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjI4MDIwNjEsImV4cCI6MjAzODM3ODA2MX0.K1snc4LJJ177WHx9y1NRh_t0FCoBnN08MsSYmjYKlT0"
+      }
     }
   }
 }
