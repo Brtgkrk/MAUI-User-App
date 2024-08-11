@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="256.0px"
+   height="256.0px"
+   viewBox="0 0 256.0 256.0"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="simple_logo.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview187"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="2.025849"
+     inkscape:cx="48.37478"
+     inkscape:cy="160.17976"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid310" />
+  </sodipodi:namedview>
+  <defs
+     id="defs182">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1161">
+      <stop
+         style="stop-color:#155ce6;stop-opacity:1;"
+         offset="0"
+         id="stop1157" />
+      <stop
+         style="stop-color:#289cc7;stop-opacity:1;"
+         offset="1"
+         id="stop1159" />
+    </linearGradient>
+    <rect
+       x="62.827594"
+       y="85.166295"
+       width="191.97321"
+       height="171.03067"
+       id="rect1153" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1095">
+      <stop
+         style="stop-color:#2964f8;stop-opacity:1;"
+         offset="0"
+         id="stop1091" />
+      <stop
+         style="stop-color:#069dbc;stop-opacity:1;"
+         offset="1"
+         id="stop1093" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1095"
+       id="linearGradient1097"
+       x1="6.9106827"
+       y1="127.35401"
+       x2="251.7463"
+       y2="127.35401"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0082403,0,0,1.0082403,-2.3941933,-0.40343511)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1161"
+       id="linearGradient1065"
+       x1="68.078125"
+       y1="120.28562"
+       x2="249.23438"
+       y2="120.28562"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:none;fill-opacity:1;stroke:url(#linearGradient1097);stroke-width:9.14688;stroke-dasharray:none"
+       id="path369"
+       cx="128"
+       cy="128"
+       r="123.42656" />
+    <text
+       xml:space="preserve"
+       id="text1151"
+       style="font-weight:bold;font-size:64px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic Bold';white-space:pre;shape-inside:url(#rect1153);display:inline;fill:url(#linearGradient1065);fill-opacity:1;stroke-width:8.93102;stroke-dasharray:none"
+       transform="translate(-28.078125,3.8550088)"><tspan
+         x="62.828125"
+         y="143.26999"
+         id="tspan2195">LOGO</tspan></text>
+  </g>
+</svg>

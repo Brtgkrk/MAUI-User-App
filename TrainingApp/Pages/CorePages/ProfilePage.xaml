@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrainingApp.Pages.CorePages.ProfilePage"
+             Title=""
+             NavigationPage.HasBackButton="False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Main profile section -->
+        <Label 
+            Text="Your Profile"
+            FontSize="32"
+            FontAttributes="Bold"
+            Margin="0, 40"
+            VerticalOptions="Start"
+            HorizontalOptions="Center"
+            Grid.Row="0" />
+
+        <!-- Logout Button -->
+        <Button Text="Logout"
+            TextColor="White"
+            BackgroundColor="OrangeRed"
+            FontSize="24"
+            CornerRadius="30"
+            WidthRequest="300"
+            HorizontalOptions="Center"
+            VerticalOptions="End"
+            Grid.Row="1"
+            Margin="0, 40"
+            Clicked="OnLogoutButtonClicked" />
+    </Grid>
+</ContentPage>

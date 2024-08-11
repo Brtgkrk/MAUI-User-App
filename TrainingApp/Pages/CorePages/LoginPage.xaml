@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:TrainingApp.Models.Core"
+             x:Class="TrainingApp.MainPage"
+             xmlns:shapes="clr-namespace:Microsoft.Maui.Controls.Shapes;assembly=Microsoft.Maui.Controls"
+             Title=""
+             Shell.TabBarIsVisible="False"
+             NavigationPage.HasBackButton="False">
+
+    <Grid>
+        <!-- Background Image -->
+        <Image Source="splash_background.png"
+           Aspect="Center"
+           Opacity="0.7" />
+
+        <!-- Top Section with Logo and Welcome Text -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*" />
+            <RowDefinition Height="60*" />
+        </Grid.RowDefinitions>
+
+        <Ellipse WidthRequest="800" 
+            HeightRequest="300"
+            HorizontalOptions="Center"
+            VerticalOptions="End"
+            Margin="0,0,0,200">
+
+            <Ellipse.Shadow>
+                <Shadow Brush="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Black}}"
+                        Offset="0, 20"
+                        Opacity="0.5" 
+                        Radius="60"  />
+            </Ellipse.Shadow>
+        </Ellipse>
+
+        <Image Source="simple_logo.svg"
+                HeightRequest="100"
+                WidthRequest="100"
+                Aspect="AspectFit"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                Margin="0, 5"/>
+
+        <!-- Welcome Text with Background Image -->
+        <Grid Grid.Row="1" VerticalOptions="Start" HorizontalOptions="Center">
+            <Image Source="background.png" Aspect="AspectFill" Opacity="0.2"/>
+            <Label Text="Welcome to Our App"
+                   TextColor="{StaticResource White}"
+                   FontAttributes="Bold"
+                   FontSize="28"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   Margin="0, -180"/>
+        </Grid>
+
+        <!-- Login Section -->
+        <Ellipse WidthRequest="800" 
+            HeightRequest="300"
+            HorizontalOptions="Center"
+            VerticalOptions="End"
+            Margin="0,0,0,-350">
+
+            <Ellipse.Shadow>
+                <Shadow Brush="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Black}}"
+            Offset="0, -20"
+            Opacity="0.5" 
+            Radius="60"  />
+            </Ellipse.Shadow>
+
+        </Ellipse>
+
+        <Frame Grid.Row="1"
+               VerticalOptions="End"
+               Padding="0"
+               CornerRadius="0"
+               HasShadow="False"
+               Margin="0, 40"
+               BorderColor="Transparent">
+
+            <Frame.Shadow>
+                <Shadow Brush="Black" 
+                Opacity="0.3"
+                Offset="0,-5"
+                Radius="10" />
+            </Frame.Shadow>
+
+            <StackLayout Padding="24, 20" Spacing="40">
+
+                <!-- Username Field -->
+                <Grid VerticalOptions="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label 
+                        Text="{x:Static models:Icons.PersonIcon}" 
+                        Style="{x:StaticResource GoogleFont}" 
+                        Margin="10, 10"/>
+
+                    <Entry x:Name="UsernameEntry" 
+                       Placeholder="Username"
+                       FontSize="16"
+                       TextColor="White"
+                       BackgroundColor="Transparent"
+                       Grid.Column="1" />
+                </Grid>
+
+                <!-- Password Field -->
+                <Grid VerticalOptions="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label 
+                        Text="{x:Static models:Icons.LockIcon}" 
+                        Style="{x:StaticResource GoogleFont}" 
+                        Margin="10, 10"/>
+
+                    <Entry x:Name="PasswordEntry" 
+                       Placeholder="Password" 
+                       FontSize="16"
+                       IsPassword="True"
+                       TextColor="White"
+                       BackgroundColor="Transparent"
+                       Grid.Column="1" />
+                </Grid>
+
+                <!-- Options Section -->
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" VerticalOptions="Center" >
+                    <CheckBox Margin="0, -10, 0, -10"/>
+                    <Label Text="Remember me" VerticalOptions="Center"/>
+                    <Label Text="Forgot your password?" VerticalOptions="Center" HorizontalOptions="EndAndExpand" TextColor="{StaticResource Primary}" />
+                </StackLayout>
+
+                <!-- Login Button -->
+                <Button Text="Login"
+                    TextColor="White"
+                    FontSize="18"
+                    CornerRadius="30"
+                    HeightRequest="50"
+                    HorizontalOptions="Fill" 
+                    Clicked="OnLoginButtonClicked" />
+            </StackLayout>
+        </Frame>
+    </Grid>
+
+</ContentPage>
