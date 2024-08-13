@@ -102,6 +102,9 @@
 	  <Folder Include="Pages\ModalPages\" />
 	</ItemGroup>
 	<ItemGroup>
+	  <ProjectReference Include="..\BaseApp.Core\BaseApp.Core.csproj" />
+	</ItemGroup>
+	<ItemGroup>
 	  <Compile Update="Pages\CorePages\LoginPage.xaml.cs">
 	    <DependentUpon>LoginPage.xaml</DependentUpon>
 	  </Compile>
