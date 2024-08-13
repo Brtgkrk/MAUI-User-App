@@ -7,15 +7,14 @@ using System.Net.Http;
 using Newtonsoft.Json;
 using Supabase;
 
-namespace TrainingApp.Models.Server.Core
+namespace BaseApp.Core.ServerConnectivity
 {
     public static class SupabaseService
     {
         public static Client SupabaseClient;
         private static readonly HttpClient _httpClient;
-        // TODO: ENV not working lol xd
-        public static readonly string serverUrl = Environment.GetEnvironmentVariable("SERVER_URL") ?? "https://perqvkdlykymdttetgqf.supabase.co";
-        public static readonly string serverKey = Environment.GetEnvironmentVariable("SERVER_KEY") ?? "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBlcnF2a2RseWt5bWR0dGV0Z3FmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjI4MDIwNjEsImV4cCI6MjAzODM3ODA2MX0.K1snc4LJJ177WHx9y1NRh_t0FCoBnN08MsSYmjYKlT0";
+        public static readonly string serverUrl = Environment.GetEnvironmentVariable("SERVER_URL") ?? "";
+        public static readonly string serverKey = Environment.GetEnvironmentVariable("SERVER_KEY") ?? "";
 
         static SupabaseService()
         {

@@ -97,7 +97,7 @@
 	  </MauiXaml>
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="Models\Server\Scaffolded\" />
+	  <Folder Include="Models\Server\Core\" />
 	  <Folder Include="Pages\CustomPages\" />
 	  <Folder Include="Pages\ModalPages\" />
 	</ItemGroup>

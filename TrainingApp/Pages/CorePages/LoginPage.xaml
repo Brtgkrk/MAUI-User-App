@@ -95,9 +95,10 @@
                     </Grid.ColumnDefinitions>
 
                     <Label 
-                        Text="{x:Static models:Icons.PersonIcon}" 
+                        Text="{x:Static models:Icons.Person}" 
                         Style="{x:StaticResource GoogleFont}" 
-                        Margin="10, 10"/>
+                        Margin="5, 10"
+                        TextColor="{StaticResource PrimaryDark}"/>
 
                     <Entry x:Name="IdentityEntry" 
                        Placeholder="Username"
@@ -114,9 +115,10 @@
                     </Grid.ColumnDefinitions>
 
                     <Label 
-                        Text="{x:Static models:Icons.LockIcon}" 
+                        Text="{x:Static models:Icons.Lock}" 
                         Style="{x:StaticResource GoogleFont}" 
-                        Margin="10, 10"/>
+                        Margin="5, 10"
+                        TextColor="{StaticResource PrimaryDark}"/>
 
                     <Entry x:Name="PasswordEntry" 
                        Placeholder="Password" 

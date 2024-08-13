@@ -1,5 +1,6 @@
-﻿using Microsoft.Maui.ApplicationModel.Communication;
-using TrainingApp.Models.Server.Core;
+﻿using BaseApp.Core.ServerConnectivity;
+using Microsoft.Maui.ApplicationModel.Communication;
+//using TrainingApp.Models.Server.Core;
 using TrainingApp.Pages.CorePages;
 
 namespace TrainingApp

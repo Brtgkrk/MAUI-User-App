@@ -10,8 +10,9 @@
     <ProjectReference Include="..\BaseApp.Core.Entities\BaseApp.Core.Entities.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="ServerConnectivity\" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="Supabase" Version="1.1.1" />
+	</ItemGroup>
 
 </Project>

@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.Logging;
-using TrainingApp.Models.Server.Core;
 using TrainingApp.Pages.CorePages;
 
 namespace TrainingApp
@@ -22,9 +21,6 @@ namespace TrainingApp
             builder.Services.AddSingleton<MainPage>();
             builder.Services.AddSingleton<HomePage>();
             builder.Services.AddSingleton<ProfilePage>();
-
-            var d00pa1 = SupabaseService.serverUrl;
-            var d00pa2 = SupabaseService.serverKey;
 
             // Add all non singleton details pages
 
